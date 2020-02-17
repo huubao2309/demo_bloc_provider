@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/widgets.dart';
 
-// ChangeNotifierProvide
+// Value Notifier
 class Counter {
   final ValueNotifier<int> valueNotifier = ValueNotifier(0);
 }
@@ -12,7 +12,7 @@ class DemoValueListenableProvider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Provider<Counter>(
         create: (context) => Counter(),
-        child: Consumer<Counter>(builder: (context, counter, child) {
+        child: Consumer<Counter>(builder: (context, counter, child,) {
           return ValueListenableProvider<int>.value(
               value: counter.valueNotifier,
               child: Center(
