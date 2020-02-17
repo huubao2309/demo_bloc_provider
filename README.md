@@ -47,24 +47,24 @@ Link Provider (4.0.4): https://pub.dev/packages/provider
   }
 ```
 #### Call multi Provider:
-* C1: 
+* **C1**: 
   ```javascript
-  @override
-  Widget build(BuildContext context) {
-    Counter1 counter1 = Provider.of<Counter1>(context);
-    Counter2 counter2 = Provider.of<Counter2>(context);
-    ...
-```
-* C2: 
+    @override
+    Widget build(BuildContext context) {
+      Counter1 counter1 = Provider.of<Counter1>(context);
+      Counter2 counter2 = Provider.of<Counter2>(context);
+      ...
+  ```
+* **C2**: 
   ```javascript
-  @override
-  Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        Provider<Counter1>.value(value: Counter1()),
-        Provider<Counter2>.value(value: Counter2()),
-      ],
-      child: Container(),
-    );
-    ...
-```
+    @override
+    Widget build(BuildContext context) {
+      return MultiProvider(
+        providers: [
+          Provider<Counter1>.value(value: Counter1()),
+          Provider<Counter2>.value(value: Counter2()),
+        ],
+        child: Container(),
+      );
+      ...
+  ```
