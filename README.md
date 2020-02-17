@@ -1,5 +1,6 @@
 # Bloc - Provider
-Link Provider (4.0.4): https://pub.dev/packages/provider
+**Link**: * Provider (4.0.4): https://pub.dev/packages/provider
+          * Bloc (3.0.0): https://pub.dev/packages/bloc
 
 ## Provider
 (Remove using `SetState()`)
