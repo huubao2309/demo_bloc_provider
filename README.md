@@ -70,3 +70,24 @@ Link Provider (4.0.4): https://pub.dev/packages/provider
   ```
 ### Use [ValueNotifier](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_value_listenable_provider.dart):
 ![ValueNotifier](/images/ValueNotifier.png)
+
+### Use [Proxy Provider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_proxy_provider.dart):
+(Use for `Dependency Injection`)
+![ProxyProvider](/images/ProxyProvider.png)
+
+#### Use Proxy Provider:
+  ```javascript
+     @override
+  Widget build(BuildContext context) {
+    return ChangeNotifierProvider<CounterModel>.value(
+      value: CounterModel(counterService: Provider.of(context)),
+      child: Consumer<CounterModel>(
+        builder: (context, model, child) => Center(
+        ...
+        ),
+      ...
+  ```
+* Method `ProxyProvider` can inject 6 method `ProxyProvider1, ProxyProvider2, ProxyProvider 3, ...., ProxyProvider6`
+  ```javascript
+     ProxyProvider3<CounterApi1, CounterApi2, CounterApi3, CounterService>
+  ```
