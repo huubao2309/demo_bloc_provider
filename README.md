@@ -87,7 +87,8 @@ Link Provider (4.0.4): https://pub.dev/packages/provider
         ),
       ...
   ```
-* Method `ProxyProvider` can inject 6 method `ProxyProvider1, ProxyProvider2, ProxyProvider 3, ...., ProxyProvider6`
+* Method `ProxyProvider` can inject 6 method `ProxyProvider1, ProxyProvider2, ..., ProxyProvider6`
   ```javascript
      ProxyProvider3<CounterApi1, CounterApi2, CounterApi3, CounterService>
   ```
+
