@@ -3,7 +3,7 @@ Link Provider (4.0.4): https://pub.dev/packages/provider
 
 ## Provider
 
-### How to use:
+### How to use [Provider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/basic.dart):
 * **C1**: Use keyword `Consumer`
 ```javascript
   Widget build(BuildContext context) {
@@ -21,5 +21,5 @@ Link Provider (4.0.4): https://pub.dev/packages/provider
     );
   }
 ```
-### Use `ChangeNotifierProvider`:
+### Use [ChangeNotifierProvider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_change_notifier.dart):
 ![ChangeNotifierProvider](/images/ChangeNotifierProvider.png)
