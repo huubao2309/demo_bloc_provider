@@ -29,12 +29,10 @@ class DemoMultipleProvider extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          builder: (_) => Counter1(),
-          create: (BuildContext context) {},
+          create: (_) => Counter1(),
         ),
         ChangeNotifierProvider(
-          builder: (_) => Counter2(),
-          create: (BuildContext context) {},
+          create: (_) => Counter2(),
         ),
       ],
       child: TestWidget1(),
