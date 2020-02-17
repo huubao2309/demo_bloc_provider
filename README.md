@@ -99,3 +99,7 @@ Link Provider (4.0.4): https://pub.dev/packages/provider
 
 ### Use [Stream Provider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_stream_provider.dart):
 ![Stream Provider](/images/StreamProvider.png)
+
+## BLOC
+
+## BLOC - Provider
