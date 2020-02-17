@@ -68,3 +68,5 @@ Link Provider (4.0.4): https://pub.dev/packages/provider
       );
       ...
   ```
+### Use [ValueNotifier](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_value_listenable_provider.dart):
+![ValueNotifier](/images/ValueNotifier.png)
