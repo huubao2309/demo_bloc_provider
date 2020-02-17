@@ -3,7 +3,7 @@ Link Provider (4.0.4): https://pub.dev/packages/provider
 
 ## Provider
 
-### Use
+### How to use:
 * **C1**: Use keyword `Consumer`
 ```javascript
   Widget build(BuildContext context) {
@@ -21,4 +21,5 @@ Link Provider (4.0.4): https://pub.dev/packages/provider
     );
   }
 ```
-
+### Use `ChangeNotifierProvider`:
+![ChangeNotifierProvider](/images/ChangeNotifierProvider.png)
