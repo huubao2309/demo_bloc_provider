@@ -7,7 +7,7 @@ class DemoStreamProvider extends StatelessWidget {
   Widget build(BuildContext context) {
     return StreamProvider<int>.value(
       value: getAge(),
-      child: DemoFutureWidget(),
+      child: DemoStreamWidget(),
     );
   }
 
@@ -18,7 +18,7 @@ class DemoStreamProvider extends StatelessWidget {
   }
 }
 
-class DemoFutureWidget extends StatelessWidget {
+class DemoStreamWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Consumer<int>(
