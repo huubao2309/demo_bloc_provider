@@ -72,7 +72,9 @@ Link Provider (4.0.4): https://pub.dev/packages/provider
 ![ValueNotifier](/images/ValueNotifier.png)
 
 ### Use [Proxy Provider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_proxy_provider.dart):
+
 (Use for `Dependency Injection`)
+
 ![ProxyProvider](/images/ProxyProvider.png)
 
 #### Use Proxy Provider:
@@ -92,3 +94,8 @@ Link Provider (4.0.4): https://pub.dev/packages/provider
      ProxyProvider3<CounterApi1, CounterApi2, CounterApi3, CounterService>
   ```
 
+### Use [Future Provider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_future_provider.dart):
+![Future Provider](/images/FutureProvider.png)
+
+### Use [Stream Provider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_stream_provider.dart):
+![Stream Provider](/images/StreamProvider.png)
