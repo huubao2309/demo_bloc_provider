@@ -2,8 +2,6 @@
 **Link**: 
 * Provider (4.0.4): https://pub.dev/packages/provider
 
-* Bloc (3.0.0): https://pub.dev/packages/bloc
-
 ## Provider
 (Remove using `SetState()`)
 
@@ -167,4 +165,44 @@
   ...
 ```
 
-## BLOC - Provider
+## Bloc + Provider
+### [**Source Bloc + Provider**](https://github.com/huubao2309/demo_bloc_provider/tree/master/demo_bloc_provider/lib/bloc_and_provider)
+* [**Add Action at View**](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/bloc_and_provider/search_box.dart)
+
+```javascript
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+
+    // get bloc on context
+    var bloc = Provider.of<SearchBlocProvider>(context);
+    searchController.addListener(() {
+      bloc.search(searchController.text);
+    });
+  }
+  ...
+```
+* [**Use Bloc + Provider**](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/bloc_and_provider/search_list_result.dart):
+
+```javascript
+    @override
+    Widget build(BuildContext context) {
+      return Consumer<SearchBlocProvider>(
+        builder: (context, bloc, child) => Container(
+          child: StreamBuilder<List<String>>(
+              initialData: [],
+              stream: bloc.searchController.stream,
+              builder: (context, snapshot) {
+                return ListView.builder(
+                    itemCount: snapshot.data.length,
+                    itemBuilder: (context, index) {
+                      return _buildRow(snapshot.data[index]);
+                    });
+              }),
+        ),
+      );
+    }
+    ...
+```
+
+
