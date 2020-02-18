@@ -103,6 +103,68 @@
 ### Use [Stream Provider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_stream_provider.dart):
 ![Stream Provider](/images/StreamProvider.png)
 
-## BLOC
+## BLOC (Business Logic Component)
+![BLOC](/images/bloc_diagram.png)
+(**Note:** Don't use *Bloc* in *Bloc*)
+
+[Source Bloc](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/bloc)
+
+### Use Bloc
+* [**At View**](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/bloc/search_box.dart):
+
+```javascript
+  class SearchBox extends StatefulWidget {
+    final SearchBloc bloc;
+    SearchBox({SearchBloc bloc}) : this.bloc = bloc;
+
+    @override
+    _SearchBoxState createState() => _SearchBoxState();
+  }
+  ...
+```
+
+```javascript
+    searchController.addListener(() {
+      widget.bloc.search(searchController.text); // handle 
+    });
+  ...
+```
+
+* [**At Bloc file**](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/bloc/search_bloc.dart):
+
+```javascript
+  search(String query) {
+    if (query.isEmpty) {
+      searchController.sink.add(dataSearch);
+      return;
+    }
+
+    _filter(query).then((result) {
+      // push value to Stream
+      searchController.sink.add(result);
+    });
+  }
+  ...
+```
+* [**And use display on View**](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/bloc/search_box.dart):
+
+```javascript
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: StreamBuilder<List<String>>(
+          initialData: [],
+          stream: widget.bloc.searchController.stream,
+          builder: (context, snapshot) {
+            return ListView.builder(
+                itemCount: snapshot.data.length,
+                itemBuilder: (context, index) {
+                  return _buildRow(snapshot.data[index]);
+                });
+          }),
+    );
+  }
+  ...
+```
 
 ## BLOC - Provider
