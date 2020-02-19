@@ -2,10 +2,10 @@
 **Link**: 
 * Provider (4.0.4): https://pub.dev/packages/provider
 
-## Provider
+## 1. Provider
 (Remove using `SetState()`)
 
-### How to use [Provider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/basic.dart):
+### a. How to use [Provider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/basic.dart):
 * **C1**: Use keyword `Consumer`
 ```javascript
   @override
@@ -25,10 +25,10 @@
     );
   }
 ```
-### Use [ChangeNotifierProvider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_change_notifier.dart):
+### b. Use [ChangeNotifierProvider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_change_notifier.dart):
 ![ChangeNotifierProvider](/images/ChangeNotifierProvider.png)
 
-### Use [MultiProvider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_multiple_provider.dart):
+### c. Use [MultiProvider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_multiple_provider.dart):
 (Beacuse a program have many method `SetState()`)
 ```javascript
   @override
@@ -69,10 +69,10 @@
       );
       ...
   ```
-### Use [ValueNotifier](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_value_listenable_provider.dart):
+### d. Use [ValueNotifier](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_value_listenable_provider.dart):
 ![ValueNotifier](/images/ValueNotifier.png)
 
-### Use [Proxy Provider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_proxy_provider.dart):
+### e. Use [Proxy Provider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_proxy_provider.dart):
 
 (Use for `Dependency Injection`)
 
@@ -95,13 +95,13 @@
      ProxyProvider3<CounterApi1, CounterApi2, CounterApi3, CounterService>
   ```
 
-### Use [Future Provider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_future_provider.dart):
+### f. Use [Future Provider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_future_provider.dart):
 ![Future Provider](/images/FutureProvider.png)
 
-### Use [Stream Provider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_stream_provider.dart):
+### g. Use [Stream Provider](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/provider/demo_stream_provider.dart):
 ![Stream Provider](/images/StreamProvider.png)
 
-## BLOC (Business Logic Component)
+## 2. BLOC (Business Logic Component)
 ![BLOC](/images/bloc_diagram.png)
 (**Note:** Don't use *Bloc* in *Bloc*)
 
@@ -165,7 +165,7 @@
   ...
 ```
 
-## Bloc + Provider
+## 3. Bloc + Provider
 ### [**Source Bloc + Provider**](https://github.com/huubao2309/demo_bloc_provider/tree/master/demo_bloc_provider/lib/bloc_and_provider)
 * [**Add Action at View**](https://github.com/huubao2309/demo_bloc_provider/blob/master/demo_bloc_provider/lib/bloc_and_provider/search_box.dart)
 
