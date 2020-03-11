@@ -5,9 +5,9 @@
 ============================================================================
 
 ## Menu Bloc - Provider:
-### 1. [Provider](https://github.com/huubao2309/demo_bloc_provider#1-provider)
-### 2. [BLOC (Business Logic Component)](https://github.com/huubao2309/demo_bloc_provider#2-bloc-business-logic-component)
-### 3. [Bloc + Provider](https://github.com/huubao2309/demo_bloc_provider#3-bloc--provider)
+### 1. [Provider](https://github.com/huubao2309/demo_bloc_provider#1-provider-1)
+### 2. [BLOC (Business Logic Component)](https://github.com/huubao2309/demo_bloc_provider#2-bloc-business-logic-component-1)
+### 3. [Bloc + Provider](https://github.com/huubao2309/demo_bloc_provider#3-bloc--provider-1)
 
 ============================================================================
 
